@@ -82,6 +82,6 @@ knn.fit(X_train, y_train)
 # Tenta prever os dados de teste
 y_pred = knn.predict(X_test)
 
-# Apresenta na tela a precisão da máquina ao utilizar os dados, no caso, possui 95% de chance de acerto
-# A cada 100 tentativas, a máquina erra 5
+# Apresenta na tela a precisão da máquina ao utilizar os dados, no caso, possui 90% de chance de acerto
+# A cada 100 tentativas, a máquina erra 10
 print(knn.score(X_test, y_test))
