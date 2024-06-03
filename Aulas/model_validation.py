@@ -13,7 +13,8 @@ y = iris.target
 
 # Define 4 variaveis e adiciona a importação com argumentos, sendo eles, respectivamente
 # Os dados e data e target da iris, X e y
-# Percentual de dados para teste de 30% pra fazer teste e 70% para treino, 
+# Percentual de dados para teste de 30% pra fazer teste e 70% para treino
+# Definindo sua precisão
 # random state fará com que a máquina consiga gerar números aleatórios pois ela precisa de uma base(21),
 # E stratify para colocar os mesmos números de classes para fazer o teste nas mesmas quantidades
 X_train, X_test, y_train, y_test = train_test_split(
@@ -32,5 +33,5 @@ y_pred = knn.predict(X_test)
 # print(f"Previsões do conjunto de teste:\n {y_pred}")
 
 # Comparar os dados de y_pred (o que o algoritmo previu) com o y_test (conjunto de dados reais)
-# Usando argumentos de teste 
+# Usando argumentos de teste e mostrando sua chance de acerto com base na quantidade de vizinhos
 print(knn.score(X_test, y_test))
